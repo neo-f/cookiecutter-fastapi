@@ -1,10 +1,11 @@
--r ./test.in
+-r ./production.in
 
 # Code quality
 # ------------------------------------------------------------------------------
 black              # https://github.com/ambv/black
 pre-commit         # https://github.com/pre-commit/pre-commit
-prospector         # https://github.com/PyCQA/prospector
+pylint
+flake8
 
 # Tools
 # ------------------------------------------------------------------------------
