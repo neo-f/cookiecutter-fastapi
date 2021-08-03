@@ -44,7 +44,7 @@ idna==2.10
     #   rfc3986
 iso8601==0.1.13
     # via tortoise-orm
-pydantic==1.7.3
+pydantic==1.7.4
     # via
     #   -r production.in
     #   aerich
