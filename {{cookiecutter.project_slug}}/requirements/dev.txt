@@ -65,14 +65,14 @@ distlib==0.3.1
     # via virtualenv
 dodgy==0.2.1
     # via prospector
-fastapi==0.63.0
+fastapi==0.65.2
     # via -r ././production.in
 filelock==3.0.12
     # via virtualenv
-flake8-polyfill==1.0.2
-    # via pep8-naming
 flake8==3.8.4
     # via flake8-polyfill
+flake8-polyfill==1.0.2
+    # via pep8-naming
 gunicorn==20.0.4
     # via -r ././production.in
 h11==0.12.0
@@ -93,10 +93,10 @@ idna==2.10
     #   rfc3986
 iniconfig==1.1.1
     # via pytest
-ipython-genutils==0.2.0
-    # via traitlets
 ipython==7.19.0
     # via -r dev.in
+ipython-genutils==0.2.0
+    # via traitlets
 iso8601==0.1.13
     # via tortoise-orm
 isort==4.3.21
@@ -160,7 +160,7 @@ pycodestyle==2.6.0
     # via
     #   flake8
     #   prospector
-pydantic==1.7.3
+pydantic==1.8.2
     # via
     #   -r ././production.in
     #   aerich
@@ -176,6 +176,13 @@ pygments==2.7.4
     #   cli-helpers
     #   ipython
     #   pgcli
+pylint==2.5.3
+    # via
+    #   prospector
+    #   pylint-celery
+    #   pylint-django
+    #   pylint-flask
+    #   pylint-plugin-utils
 pylint-celery==0.3
     # via prospector
 pylint-django==2.1.0
@@ -188,28 +195,21 @@ pylint-plugin-utils==0.6
     #   pylint-celery
     #   pylint-django
     #   pylint-flask
-pylint==2.5.3
-    # via
-    #   prospector
-    #   pylint-celery
-    #   pylint-django
-    #   pylint-flask
-    #   pylint-plugin-utils
 pyparsing==2.4.7
     # via
     #   ddlparse
     #   packaging
 pypika==0.44.1
     # via tortoise-orm
-pytest-cov==2.10.1
-    # via -r ./test.in
-pytest-sugar==0.9.4
-    # via -r ./test.in
 pytest==6.2.1
     # via
     #   -r ./test.in
     #   pytest-cov
     #   pytest-sugar
+pytest-cov==2.10.1
+    # via -r ./test.in
+pytest-sugar==0.9.4
+    # via -r ./test.in
 python-dateutil==2.8.1
     # via pendulum
 python-dotenv==0.15.0
@@ -256,7 +256,7 @@ sqlparse==0.4.1
     # via
     #   pgcli
     #   pgspecial
-starlette==0.13.6
+starlette==0.14.2
     # via fastapi
 tabulate[widechars]==0.8.7
     # via cli-helpers
@@ -285,6 +285,7 @@ typing-extensions==3.7.4.3
     # via
     #   aiosqlite
     #   black
+    #   pydantic
 urllib3==1.26.2
     # via
     #   requests

@@ -41,12 +41,12 @@ ddlparse==1.9.0
     # via aerich
 dodgy==0.2.1
     # via prospector
-fastapi==0.63.0
+fastapi==0.65.2
     # via -r ./production.in
-flake8-polyfill==1.0.2
-    # via pep8-naming
 flake8==3.8.4
     # via flake8-polyfill
+flake8-polyfill==1.0.2
+    # via pep8-naming
 gunicorn==20.0.4
     # via -r ./production.in
 h11==0.12.0
@@ -92,7 +92,7 @@ pycodestyle==2.6.0
     # via
     #   flake8
     #   prospector
-pydantic==1.7.3
+pydantic==1.8.2
     # via
     #   -r ./production.in
     #   aerich
@@ -103,6 +103,13 @@ pyflakes==2.2.0
     # via
     #   flake8
     #   prospector
+pylint==2.5.3
+    # via
+    #   prospector
+    #   pylint-celery
+    #   pylint-django
+    #   pylint-flask
+    #   pylint-plugin-utils
 pylint-celery==0.3
     # via prospector
 pylint-django==2.1.0
@@ -115,28 +122,21 @@ pylint-plugin-utils==0.6
     #   pylint-celery
     #   pylint-django
     #   pylint-flask
-pylint==2.5.3
-    # via
-    #   prospector
-    #   pylint-celery
-    #   pylint-django
-    #   pylint-flask
-    #   pylint-plugin-utils
 pyparsing==2.4.7
     # via
     #   ddlparse
     #   packaging
 pypika==0.44.1
     # via tortoise-orm
-pytest-cov==2.10.1
-    # via -r test.in
-pytest-sugar==0.9.4
-    # via -r test.in
 pytest==6.2.1
     # via
     #   -r test.in
     #   pytest-cov
     #   pytest-sugar
+pytest-cov==2.10.1
+    # via -r test.in
+pytest-sugar==0.9.4
+    # via -r test.in
 python-dotenv==0.15.0
     # via uvicorn
 python-multipart==0.0.5
@@ -167,7 +167,7 @@ sniffio==1.2.0
     #   httpx
 snowballstemmer==2.0.0
     # via pydocstyle
-starlette==0.13.6
+starlette==0.14.2
     # via fastapi
 termcolor==1.1.0
     # via pytest-sugar
@@ -183,7 +183,9 @@ tortoise-orm==0.16.19
 typer==0.3.2
     # via -r ./production.in
 typing-extensions==3.7.4.3
-    # via aiosqlite
+    # via
+    #   aiosqlite
+    #   pydantic
 urllib3==1.26.2
     # via
     #   requests
