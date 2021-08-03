@@ -171,7 +171,7 @@ pyflakes==2.2.0
     # via
     #   flake8
     #   prospector
-pygments==2.7.3
+pygments==2.7.4
     # via
     #   cli-helpers
     #   ipython
@@ -220,7 +220,7 @@ pytz==2020.5
     # via tortoise-orm
 pytzdata==2020.1
     # via pendulum
-pyyaml==5.3.1
+pyyaml==5.4
     # via
     #   pre-commit
     #   prospector
