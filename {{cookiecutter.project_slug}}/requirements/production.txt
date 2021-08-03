@@ -24,7 +24,7 @@ click==7.1.2
     #   uvicorn
 ddlparse==1.9.0
     # via aerich
-fastapi==0.63.0
+fastapi==0.65.2
     # via -r production.in
 gunicorn==20.0.4
     # via -r production.in
@@ -44,7 +44,7 @@ idna==2.10
     #   rfc3986
 iso8601==0.1.13
     # via tortoise-orm
-pydantic==1.7.3
+pydantic==1.8.2
     # via
     #   -r production.in
     #   aerich
@@ -73,7 +73,7 @@ sniffio==1.2.0
     # via
     #   httpcore
     #   httpx
-starlette==0.13.6
+starlette==0.14.2
     # via fastapi
 tortoise-orm==0.16.19
     # via
@@ -82,7 +82,9 @@ tortoise-orm==0.16.19
 typer==0.3.2
     # via -r production.in
 typing-extensions==3.7.4.3
-    # via aiosqlite
+    # via
+    #   aiosqlite
+    #   pydantic
 urllib3==1.26.2
     # via
     #   requests
