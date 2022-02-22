@@ -20,7 +20,7 @@ asyncpg==0.23.0
     # via -r ./production.in
 backcall==0.2.0
     # via ipython
-backports.entry-points-selectable==1.1.0
+backports-entry-points-selectable==1.1.0
     # via virtualenv
 black==21.7b0
     # via -r dev.in
@@ -190,7 +190,7 @@ sniffio==1.2.0
     #   anyio
     #   httpcore
     #   httpx
-sqlparse==0.4.1
+sqlparse==0.4.2
     # via
     #   pgcli
     #   pgspecial
