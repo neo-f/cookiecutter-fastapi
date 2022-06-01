@@ -26,6 +26,7 @@ black==21.7b0
     # via -r dev.in
 certifi==2021.5.30
     # via
+    #   httpcore
     #   httpx
     #   requests
     #   sentry-sdk
@@ -68,11 +69,11 @@ h11==0.12.0
     # via
     #   httpcore
     #   uvicorn
-httpcore==0.13.6
+httpcore==0.15.0
     # via httpx
 httptools==0.2.0
     # via uvicorn
-httpx==0.18.2
+httpx==0.23.0
     # via -r ./production.in
 identify==2.2.11
     # via pre-commit
