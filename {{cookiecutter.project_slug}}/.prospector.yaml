@@ -1,8 +1,0 @@
-strictness: medium
-test-warnings: true
-doc-warnings: false
-max-line-length: 120
-
-pylint:
-  load-plugins:
-    - tortoise.contrib.pylint

@@ -25,7 +25,6 @@ def runserver(
 def update_dep():
     files = [
         "requirements/production.in",
-        "requirements/test.in",
         "requirements/dev.in",
     ]
     for file in files:
@@ -35,8 +34,7 @@ def update_dep():
                 file,
                 "--no-emit-index-url",
                 "-U",
-                "-i",
-                "https://mirrors.aliyun.com/pypi/simple/",
+                "-v",
                 "-o",
                 file.replace(".in", ".txt"),
             ]
