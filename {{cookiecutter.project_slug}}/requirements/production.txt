@@ -38,8 +38,7 @@ gunicorn==20.1.0
 h11==0.12.0
     # via
     #   httpcore
-    #   uvicorn
-httpcore==0.15.0
+    #   uvicorn httpcore==0.15.0
     # via httpx
 httptools==0.2.0
     # via uvicorn
@@ -90,6 +89,7 @@ tortoise-orm==0.17.6
     #   aerich
 typer==0.3.2
     # via -r production.in
+    # via aiosqlite
 typing-extensions==3.10.0.0
     # via
     #   aiosqlite

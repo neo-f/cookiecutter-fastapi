@@ -222,6 +222,7 @@ typer==0.3.2
 typing-extensions==3.10.0.0
     # via
     #   aiosqlite
+    #   black
     #   pydantic
 urllib3==1.26.6
     # via
