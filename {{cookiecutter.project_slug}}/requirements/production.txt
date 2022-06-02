@@ -4,76 +4,76 @@
 #
 #    pip-compile --no-emit-index-url --output-file=requirements/production.txt requirements/production.in
 #
-aerich==0.5.5
-    # via -r production.in
-aiosqlite==0.16.1
+aerich==0.6.3
+    # via -r requirements/production.in
+aiosqlite==0.17.0
     # via tortoise-orm
-anyio==3.3.0
-    # via httpcore
-asgiref==3.4.1
+anyio==3.6.1
+    # via
+    #   httpcore
+    #   starlette
+    #   watchgod
+asgiref==3.5.2
     # via uvicorn
-asyncpg==0.23.0
-    # via -r production.in
-certifi==2021.5.30
+asyncpg==0.25.0
+    # via -r requirements/production.in
+certifi==2022.5.18.1
     # via
     #   httpcore
     #   httpx
     #   requests
     #   sentry-sdk
-charset-normalizer==2.0.4
+charset-normalizer==2.0.12
     # via requests
-click==7.1.2
+click==8.1.3
     # via
     #   aerich
     #   typer
     #   uvicorn
-ddlparse==1.10.0
-    # via aerich
 dictdiffer==0.9.0
     # via aerich
-fastapi==0.68.0
-    # via -r production.in
+fastapi==0.78.0
+    # via -r requirements/production.in
 gunicorn==20.1.0
-    # via -r production.in
+    # via -r requirements/production.in
 h11==0.12.0
     # via
     #   httpcore
-    #   uvicorn httpcore==0.15.0
+    #   uvicorn
+httpcore==0.15.0
     # via httpx
-httptools==0.2.0
+httptools==0.4.0
     # via uvicorn
 httpx==0.23.0
-    # via -r production.in
-idna==3.2
+    # via -r requirements/production.in
+idna==3.3
     # via
     #   anyio
     #   requests
     #   rfc3986
-iso8601==0.1.16
+iso8601==1.0.2
     # via tortoise-orm
-pydantic==1.8.2
+pydantic==1.9.1
     # via
-    #   -r production.in
+    #   -r requirements/production.in
     #   aerich
     #   fastapi
-pyparsing==2.4.7
-    # via ddlparse
-pypika-tortoise==0.1.1
+pypika-tortoise==0.1.5
     # via tortoise-orm
-python-dotenv==0.19.0
+python-dotenv==0.20.0
     # via uvicorn
 python-multipart==0.0.5
-    # via -r production.in
-pytz==2021.1
+    # via -r requirements/production.in
+pytz==2022.1
     # via tortoise-orm
-pyyaml==5.4.1
+pyyaml==6.0
     # via uvicorn
-requests==2.26.0
-    # via -r production.in
+requests==2.27.1
+    # via -r requirements/production.in
 rfc3986[idna2008]==1.5.0
     # via httpx
-sentry-sdk==1.3.1
-    # via -r production.in
+sentry-sdk==1.5.12
+    # via -r requirements/production.in
 six==1.16.0
     # via python-multipart
 sniffio==1.2.0
@@ -81,30 +81,32 @@ sniffio==1.2.0
     #   anyio
     #   httpcore
     #   httpx
-starlette==0.14.2
+starlette==0.19.1
     # via fastapi
-tortoise-orm==0.17.6
+tomlkit==0.11.0
+    # via aerich
+tortoise-orm==0.19.1
     # via
-    #   -r production.in
+    #   -r requirements/production.in
     #   aerich
-typer==0.3.2
-    # via -r production.in
-    # via aiosqlite
-typing-extensions==3.10.0.0
+typer==0.4.1
+    # via -r requirements/production.in
+typing-extensions==4.2.0
     # via
     #   aiosqlite
     #   pydantic
-urllib3==1.26.6
+    #   starlette
+urllib3==1.26.9
     # via
     #   requests
     #   sentry-sdk
-uvicorn[standard]==0.14.0
-    # via -r production.in
-uvloop==0.15.3
+uvicorn[standard]==0.17.6
+    # via -r requirements/production.in
+uvloop==0.16.0
     # via uvicorn
-watchgod==0.7
+watchgod==0.8.2
     # via uvicorn
-websockets==9.1
+websockets==10.3
     # via uvicorn
 
 # The following packages are considered to be unsafe in a requirements file:

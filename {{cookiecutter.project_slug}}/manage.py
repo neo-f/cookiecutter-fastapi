@@ -1,12 +1,11 @@
+import multiprocessing
+import os
 import subprocess
 
 import typer
-import os
 import uvicorn
-import multiprocessing
-from tortoise import Tortoise
-
 from app.core import config
+from tortoise import Tortoise
 
 cmd = typer.Typer()
 
@@ -55,7 +54,8 @@ def dbshell():
 def shell():
     try:
         import IPython  # pylint: disable=import-outside-toplevel
-        from traitlets.config import Config  # pylint: disable=import-outside-toplevel
+        from traitlets.config import \
+            Config  # pylint: disable=import-outside-toplevel
     except ImportError:
         return
 
